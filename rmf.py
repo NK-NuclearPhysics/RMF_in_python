@@ -346,3 +346,6 @@ def nm__main__(param,alf=0.0,ni=0.0,nf=0.5,dn=0.001):
             f.write('{0:7.3f} {1:12.4f} {2:12.4f} {3:12.4f} \n'  \
                     .format(n,enea, pres, reff))
             n += dn
+            
+cname = sys.argv[1:]
+nm__main__(*cname)  
